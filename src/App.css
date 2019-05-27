@@ -1,2 +1,104 @@
+/* NAVBAR STYLING */
+
+#navContainer {
+    margin-top: -2%;
+}
+
+#nav-position-color {
+    background-color :deepSkyBlue !important;
+    box-shadow: 2px 1px #888888; 
+}
+
+.navLink {
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+/* LANDING PAGE STYLING */
+
+#hero-landing-page {
+    background-image: url("https://dfi.wa.gov/sites/default/files/budget-16x9.jpg");
+    height: 90vh;
+    width: 100vw;
+    opacity: 0.2;
+    margin-top: -1.9%;
+    position: relative;
+}
+
+.hero-landing-page-welcome-to {
+    position: absolute;
+    z-index: 3;
+    top: 25%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-family: 'Varela Round', sans-serif;
+}
+
+.hero-landing-page-budget-city {
+    position: absolute;
+    z-index: 3;
+    top: 42%;
+    left: 49%;
+    color: deepSkyBlue;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 8em;
+    transform: translate(-50%, -50%);
+}
+
+.hero-landing-page-slogan {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 3;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-landing-page-button{
+    position: absolute;
+    top: 72%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-family: 'Varela Round', sans-serif;
+    background-color: deepSkyBlue !important;
+    color: black !important;
+    box-shadow: 2px 2px black;
+}
+
+.hero-landing-page-button-anchor {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.three-reasons-landing-page{
+    background-color: #F8F8FF;
+}
+
+.three-reasons-header{
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    color: deepSkyBlue;
+}
+
+.three-reasons-paragraph-container{
+    max-width: 40%;
+    margin: auto;
+}
+
+.three-reasons-paragraph-text{
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: deepSkyBlue;
+}
 
 
