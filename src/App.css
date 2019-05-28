@@ -1,4 +1,4 @@
-/* NAVBAR STYLING */
+/* NAVBAR */
 
 #navContainer {
     margin-top: -2%;
@@ -14,7 +14,7 @@
 }
 
 
-/* LANDING PAGE STYLING */
+/* LANDING PAGE */
 
 #hero-landing-page {
     background-image: url("https://dfi.wa.gov/sites/default/files/budget-16x9.jpg");
@@ -73,26 +73,42 @@
 }
 
 .three-reasons-landing-page{
-    background-color: #F8F8FF;
+    background-color: #F0FFFF;
+}
+
+.three-reasons-header-purpose{
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin-top: 5rem;
+    color: deepSkyBlue;
 }
 
 .three-reasons-header{
     font-family: 'Varela Round', sans-serif;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2rem;
     color: deepSkyBlue;
 }
 
 .three-reasons-paragraph-container{
-    max-width: 40%;
+    max-width: 50%;
     margin: auto;
 }
 
 .three-reasons-paragraph-text{
     font-family: 'Varela Round', sans-serif;
     text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
+.three-reasons-arrow-container{
+    color: deepSkyBlue;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* LOGIN PAGE */
 
 
 /* FOOTER */
