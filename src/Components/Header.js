@@ -11,6 +11,7 @@ import {
   import "../App.css"
 
 
+//ONLY RENDER NAVBAR IF USER IS LOGGED IN
 
 class Header extends Component {
     render(){
@@ -23,10 +24,10 @@ class Header extends Component {
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className="navLink" href="/login">Login</NavLink>
+                <NavLink className="navLink" href="/login">Your Expenses</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="navLink" href="/register">Register</NavLink>
+                <NavLink className="navLink" href="/register">Logout</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

@@ -10,11 +10,12 @@ import Footer from "./Components/Footer.js"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import {Button} from 'reactstrap'
 
+//ONLY GOING TO RENDER NAVBAR WHEN USER IS LOGGED IN
+
 class App extends Component {
   render(){
     return (
       <BrowserRouter>
-        <Header />
           <div className="App">
                 <Switch>
                     <Route path="/" exact render={() => <LandingPage />} />

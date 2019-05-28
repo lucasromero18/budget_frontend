@@ -6,9 +6,11 @@ import "../App.css"
 class Login extends Component {
     render(){
       return (
-        <div>
-          <h1>Login</h1>  
+        <>
+        <div id="login">
+          <h1 className="login-register-header">Login</h1>  
         </div>
+        </>
       );
     }
   }
