@@ -22,9 +22,11 @@ class LandingPage extends Component {
           <Button className="hero-landing-page-button" size="lg"><a className="hero-landing-page-button-anchor" href="#three-reasons-landing-page">Why BudgetCity?</a></Button>
         </div>
         <div>
+          <p className="hero-landing-page-question-login">Already have an account?</p>
           <Button className="hero-landing-page-button-login" size="lg"><a className="hero-landing-page-login-anchor" href="/login">Login</a></Button>
         </div>
         <div>
+        <p className="hero-landing-page-question-register">Create an account here</p>
           <Button className="hero-landing-page-button-register" size="lg"><a className="hero-landing-page-register-anchor" href="/register">Register</a></Button>
         </div>
         <div id="three-reasons-landing-page">

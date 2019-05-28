@@ -28,7 +28,7 @@
 .hero-landing-page-welcome-to {
     position: absolute;
     z-index: 3;
-    top: 25%;
+    top: 20%;
     left: 48%;
     transform: translate(-50%, -50%);
     font-family: 'Varela Round', sans-serif;
@@ -37,7 +37,7 @@
 .hero-landing-page-budget-city {
     position: absolute;
     z-index: 3;
-    top: 45%;
+    top: 40%;
     left: 49%;
     color: deepSkyBlue;
     text-align: center;
@@ -51,15 +51,25 @@
     font-size: 1.5rem;
     position: absolute;
     z-index: 3;
-    top: 65%;
+    top: 60%;
     left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-landing-page-question-login{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 0.8rem;
+    position: absolute;
+    z-index: 3;
+    top: 84%;
+    left: 36%;
     transform: translate(-50%, -50%);
 }
 
 .hero-landing-page-button-login{
     position: absolute;
-    top: 80%;
-    left: 35.5%;
+    top: 92%;
+    left: 35%;
     transform: translate(-50%, -50%);
     font-family: 'Varela Round', sans-serif;
     background-color: deepSkyBlue !important;
@@ -75,13 +85,15 @@
 
 .hero-landing-page-button{
     position: absolute;
-    top: 80%;
+    top: 73%;
     left: 49%;
     transform: translate(-50%, -50%);
     font-family: 'Varela Round', sans-serif;
     background-color: deepSkyBlue !important;
     color: black !important;
     box-shadow: 2px 2px black;
+    width: 15rem;
+    height: 4rem;
 }
 
 .hero-landing-page-button-anchor {
@@ -89,9 +101,19 @@
     color: black !important;
 }
 
+.hero-landing-page-question-register{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 0.8rem;
+    position: absolute;
+    z-index: 3;
+    top: 84%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+}
+
 .hero-landing-page-button-register{
     position: absolute;
-    top: 80%;
+    top: 92%;
     left: 63%;
     transform: translate(-50%, -50%);
     font-family: 'Varela Round', sans-serif;
