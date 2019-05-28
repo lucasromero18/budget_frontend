@@ -74,8 +74,9 @@
     font-family: 'Varela Round', sans-serif;
     background-color: deepSkyBlue !important;
     color: black !important;
-    box-shadow: 2px 2px black;
+    box-shadow: 2px 2px #888888;
     width: 6.5rem;
+    height: 2.8rem;
 }
 
 .hero-landing-page-login-anchor{
@@ -91,9 +92,9 @@
     font-family: 'Varela Round', sans-serif;
     background-color: deepSkyBlue !important;
     color: black !important;
-    box-shadow: 2px 2px black;
+    box-shadow: 2px 2px #888888;
     width: 15rem;
-    height: 4rem;
+    height: 3rem;
 }
 
 .hero-landing-page-button-anchor {
@@ -119,7 +120,8 @@
     font-family: 'Varela Round', sans-serif;
     background-color: deepSkyBlue !important;
     color: black !important;
-    box-shadow: 2px 2px black;
+    box-shadow: 2px 2px #888888;
+    height: 2.8rem;
 }
 
 .hero-landing-page-register-anchor{
@@ -135,7 +137,7 @@
 .three-reasons-header-purpose{
     font-family: 'Varela Round', sans-serif;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 7rem;
     color: deepSkyBlue;
 }
 
@@ -164,20 +166,89 @@
     font-size: 3rem;
 }
 
-/* LOGIN / REGISTER PAGE */
+
+/* LOGIN & REGISTER PAGE */
+#register{
+    background-image: url("https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/money/work/work-hero-1260x600.jpg");
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.2;
+}
+
+#login{
+    background-image: url("https://reviewed-com-res.cloudinary.com/image/fetch/s--ZRJCGONq--/b_white,c_fill,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_1200/https://reviewed-production.s3.amazonaws.com/1490710012000/laptop.jpg");
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.2;
+}
 .login-register-header{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'Varela Round', sans-serif;
     color: deepSkyBlue;
     text-align: center;
-    margin-top: 4rem;
     font-size: 4rem;
 }
+
+
+.form-container{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 20rem;
+}
+
+.form-container-register{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 20rem;
+}
+
+.input-name{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5rem;
+    color: deepSkyBlue;
+    margin-top: 1rem;
+}
+
+.input-name-email-login{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5rem;
+    color: deepSkyBlue;
+    margin-top: -50%;
+}
+
+.input-name-password-login{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5rem;
+    color: deepSkyBlue;
+    margin-top: 0.3rem;
+}
+
+
+.submit{
+    background-color: deepSkyBlue !important;
+    font-family: 'Varela Round', sans-serif;
+    box-shadow: 2px 2px #888888;
+    margin-top: 1.5rem;
+    margin-bottom: 25%;
+}
+
+
 
 
 /* FOOTER */
 
 .footer {
     background-color: deepSkyBlue;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
 }
 
 
