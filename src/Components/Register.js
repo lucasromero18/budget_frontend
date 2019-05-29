@@ -25,7 +25,7 @@ class Register extends Component {
                 <Label className="input-name">Password</Label>
                 <Input type="password" name="password"/>
               </FormGroup>
-                  <Button className="submit" type="submit" name="submit"><a href="/expenses-form">Submit</a></Button>
+                  <Button className="submit" type="submit" name="submit"><a className="submit-login-register-anchor" href="/expenses-form">Submit</a></Button>
             </Form>
           </div>
         </>

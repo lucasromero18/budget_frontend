@@ -21,7 +21,7 @@ class Login extends Component {
                 <Label className="input-name-password-login-expenses-form">Password</Label>
                 <Input type="password" name="password"/>
               </FormGroup>
-                  <Input className="submit" type="submit" name="submit" value="Submit"/>
+              <Button className="submit" type="submit" name="submit"><a className="submit-login-register-anchor" href="/expenses-form">Submit</a></Button>
             </Form>
           </div>
         </div>

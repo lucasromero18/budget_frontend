@@ -54,7 +54,7 @@ class ExpensesForm extends Component {
                 <Button className="add-expense" onClick={this.displayNewExpensesForm}>Add Expense</Button>
                 {form}
               </FormGroup>
-                  <Input className="submit" type="submit" name="submit" value="Submit"/>
+              <Button className="submit" type="submit" name="submit"><a className="submit-login-register-anchor" href="/expenses-form">Submit</a></Button>
             </Form>
           </div>
         </div>
