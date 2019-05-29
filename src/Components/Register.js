@@ -10,7 +10,7 @@ class Register extends Component {
         <>
         <div id="register">
         </div>
-          <h1 className="login-register-header">Register</h1>  
+          <h1 className="login-register-expenses-form-header">Register</h1>  
           <div className="form-container-register">
             <Form>
             <FormGroup className="label-input-container">
@@ -25,7 +25,7 @@ class Register extends Component {
                 <Label className="input-name">Password</Label>
                 <Input type="password" name="password"/>
               </FormGroup>
-                  <Input className="submit" type="submit" name="submit" value="Submit"/>
+                  <Button className="submit" type="submit" name="submit"><a href="/expenses-form">Submit</a></Button>
             </Form>
           </div>
         </>

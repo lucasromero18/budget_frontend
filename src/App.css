@@ -181,7 +181,7 @@
     width: 100vw;
     opacity: 0.2;
 }
-.login-register-header{
+.login-register-expenses-form-header{
     position: absolute;
     top: 10%;
     left: 50%;
@@ -211,21 +211,21 @@
 
 .input-name{
     font-family: 'Varela Round', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: deepSkyBlue;
     margin-top: 1rem;
 }
 
-.input-name-email-login{
+.input-name-login-expenses-form{
     font-family: 'Varela Round', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: deepSkyBlue;
     margin-top: -50%;
 }
 
-.input-name-password-login{
+.input-name-password-login-expenses-form{
     font-family: 'Varela Round', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: deepSkyBlue;
     margin-top: 0.3rem;
 }
@@ -237,6 +237,29 @@
     box-shadow: 2px 2px #888888;
     margin-top: 1.5rem;
     margin-bottom: 25%;
+}
+
+/* EXPENSES FORM */
+
+#expenses-form{
+    height: 100vh;
+    width: 100vw;
+    background-color: whiteSmoke;
+}
+
+.credentials-line{
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black !important;
+}
+
+.add-expense{
+    background-color: deepSkyBlue !important;
+    color: black !important;
+    box-shadow: 2px 2px #888888;
 }
 
 

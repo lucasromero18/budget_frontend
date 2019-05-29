@@ -1,13 +1,17 @@
 import React, {Component} from 'react'
 import "../App.css"
+import Header from "./Header.js"
 
 
 class Dashboard extends Component {
     render(){
       return (
-        <div>
-            <h1>Dashboard</h1>
-        </div>
+        <>
+          <div>
+            <Header />
+              <h1>Dashboard</h1>
+          </div>
+        </>
       );
     }
   }
