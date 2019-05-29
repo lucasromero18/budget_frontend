@@ -40,7 +40,7 @@ class ExpensesForm extends Component {
         <div id="expenses-form">
           <h1 className="login-register-expenses-form-header">Expenses</h1>
           <p className="credentials-line">Enter your expenses below!</p>
-          <div className="form-container">
+          <div className="form-container-expenses-form">
             <Form>
               <FormGroup className="label-input-container">
                 <Label className="input-name-login-expenses-form">Bill Name</Label>

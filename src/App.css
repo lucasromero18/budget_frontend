@@ -195,7 +195,7 @@
 
 .form-container{
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 20rem;
@@ -203,7 +203,15 @@
 
 .form-container-register{
     position: absolute;
-    top: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 20rem;
+}
+
+.form-container-expenses-form{
+    position: absolute;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 20rem;
@@ -223,11 +231,17 @@
     margin-top: -50%;
 }
 
+.input-email-name-login-expenses-form{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2rem;
+    color: deepSkyBlue;
+    margin-top: -90%;
+}
+
 .input-name-password-login-expenses-form{
     font-family: 'Varela Round', sans-serif;
     font-size: 2rem;
     color: deepSkyBlue;
-    margin-top: 0.3rem;
 }
 
 
@@ -246,6 +260,7 @@
 
 .submit-login-register-anchor{
     color: black;
+    text-decoration: none;
 }
 
 /* EXPENSES FORM */
