@@ -21,11 +21,11 @@ class ExpensesForm extends Component {
           form = (
             <Form>
             <FormGroup className="label-input-container">
-              <Label className="input-name-login-expenses-form">Bill Name</Label>
+              <Label className="input-name-expenses-form">Bill Name</Label>
               <Input type="name" name="name"/>
             </FormGroup>
             <FormGroup className="label-input-container">
-              <Label className="input-name-password-login-expenses-form">Cost</Label>
+              <Label className="input-name-expenses-form">Cost</Label>
               <Input type="text" name="cost"/>
             </FormGroup>
             <FormGroup>
@@ -38,23 +38,23 @@ class ExpensesForm extends Component {
     return (
         <>
         <div id="expenses-form">
-          <h1 className="login-register-expenses-form-header">Expenses</h1>
+          <h1 className="expenses-form-header">Expenses</h1>
           <p className="credentials-line">Enter your expenses below!</p>
           <div className="form-container-expenses-form">
             <Form>
               <FormGroup className="label-input-container">
-                <Label className="input-name-login-expenses-form">Bill Name</Label>
+                <Label className="input-name-expenses-form">Bill Name</Label>
                 <Input type="name" name="name"/>
               </FormGroup>
               <FormGroup className="label-input-container">
-                <Label className="input-name-password-login-expenses-form">Cost</Label>
+                <Label className="input-name-expenses-form">Cost</Label>
                 <Input type="text" name="cost"/>
               </FormGroup>
               <FormGroup>
                 <Button className="add-expense" onClick={this.displayNewExpensesForm}>Add Expense</Button>
                 {form}
               </FormGroup>
-              <Button className="submit" type="submit" name="submit"><a className="submit-login-register-anchor" href="/expenses-form">Submit</a></Button>
+              <Button className="submit-expenses-form" type="submit" name="submit"><a className="submit-login-register-anchor" href="/expenses-form">Submit</a></Button>
             </Form>
           </div>
         </div>

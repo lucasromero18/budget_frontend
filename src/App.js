@@ -40,8 +40,8 @@ class App extends Component {
                     <Route path="/login" render={(props) => <Login users={this.state.users}/>} />
                     <Route path="/register" render={(props) => <Register {...props} />} />
                     <Route path="/expenses-form/" render={(props) => <ExpensesForm {...props}/>} />
-                    <Route path="/dashboard/:id" render={(props) => <Dashboard users={this.state.users} credentials={this.state.credentials} {...props}/>} />
-                    <Route path="/expenses/:id" render={(props) => <Expenses users={this.state.users} credentials={this.state.credentials} {...props}/>} />
+                    <Route path="/dashboard" render={(props) => <Dashboard users={this.state.users} credentials={this.state.credentials} {...props}/>} />
+                    <Route path="/expenses" render={(props) => <Expenses users={this.state.users} credentials={this.state.credentials} {...props}/>} />
                 </Switch>
           </div>
         <Footer />

@@ -167,13 +167,7 @@
 }
 
 
-/* LOGIN & REGISTER PAGE */
-#register{
-    background-image: url("https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/money/work/work-hero-1260x600.jpg");
-    height: 100vh;
-    width: 100vw;
-    opacity: 0.2;
-}
+/* LOGIN */
 
 #login{
     background-image: url("https://reviewed-com-res.cloudinary.com/image/fetch/s--ZRJCGONq--/b_white,c_fill,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_1200/https://reviewed-production.s3.amazonaws.com/1490710012000/laptop.jpg");
@@ -181,7 +175,8 @@
     width: 100vw;
     opacity: 0.2;
 }
-.login-register-expenses-form-header{
+
+.login-header{
     position: absolute;
     top: 10%;
     left: 50%;
@@ -192,8 +187,7 @@
     font-size: 4rem;
 }
 
-
-.form-container{
+.form-container-login{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -201,51 +195,21 @@
     max-width: 20rem;
 }
 
-.form-container-register{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 20rem;
-}
-
-.form-container-expenses-form{
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 20rem;
-}
-
-.input-name{
+.input-name-login{
     font-family: 'Varela Round', sans-serif;
     font-size: 2rem;
     color: deepSkyBlue;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
 }
 
-.input-name-login-expenses-form{
-    font-family: 'Varela Round', sans-serif;
-    font-size: 2rem;
-    color: deepSkyBlue;
-    margin-top: -50%;
-}
-
-.input-email-name-login-expenses-form{
-    font-family: 'Varela Round', sans-serif;
-    font-size: 2rem;
-    color: deepSkyBlue;
-    margin-top: -90%;
-}
-
-.input-name-password-login-expenses-form{
+.input-name-password-login{
     font-family: 'Varela Round', sans-serif;
     font-size: 2rem;
     color: deepSkyBlue;
 }
 
 
-.submit{
+.submit-login{
     background-color: deepSkyBlue !important;
     font-family: 'Varela Round', sans-serif;
     box-shadow: 2px 2px #888888;
@@ -263,12 +227,73 @@
     text-decoration: none;
 }
 
+/* REGISTER */
+
+#register{
+    background-image: url("https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/money/work/work-hero-1260x600.jpg");
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.2;
+}
+
+.register-header{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Varela Round', sans-serif;
+    color: deepSkyBlue;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.form-container-register{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 20rem;
+}
+
+.input-name-register{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2rem;
+    color: deepSkyBlue;
+    margin-top: 0.2rem;
+}
+
+.submit-register{
+    background-color: deepSkyBlue !important;
+    font-family: 'Varela Round', sans-serif;
+    box-shadow: 2px 2px #888888;
+    margin-top: 1rem;
+    margin-bottom: 25%;
+    position: absolute;
+    top: 102%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+
+
 /* EXPENSES FORM */
 
 #expenses-form{
     height: 100vh;
     width: 100vw;
     background-color: whiteSmoke;
+}
+
+.expenses-form-header{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Varela Round', sans-serif;
+    color: deepSkyBlue;
+    text-align: center;
+    font-size: 4rem;
 }
 
 .credentials-line{
@@ -280,10 +305,38 @@
     color: black !important;
 }
 
+.form-container-expenses-form{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 20rem;
+}
+
+.input-name-expenses-form{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2rem;
+    color: deepSkyBlue;
+    margin-top: -50%;
+}
+
 .add-expense{
     background-color: deepSkyBlue !important;
     color: black !important;
     box-shadow: 2px 2px #888888;
+}
+
+.submit-expenses-form{
+    background-color: deepSkyBlue !important;
+    font-family: 'Varela Round', sans-serif;
+    box-shadow: 2px 2px #888888;
+    margin-top: 1rem;
+    margin-bottom: 25%;
+    position: absolute;
+    top: 115%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    width: 60%;
 }
 
 

@@ -10,18 +10,18 @@ class Login extends Component {
         <div id="login-page">
         <div id="login">
         </div>
-          <h1 className="login-register-expenses-form-header">Login</h1>  
-          <div className="form-container">
+          <h1 className="login-header">Login</h1>  
+          <div className="form-container-login">
             <Form>
               <FormGroup className="label-input-container">
-                <Label className="input-name-login-expenses-form">Email</Label>
+                <Label className="input-name-login">Email</Label>
                 <Input type="email" name="email"/>
               </FormGroup>
               <FormGroup className="label-input-container">
-                <Label className="input-name-password-login-expenses-form">Password</Label>
+                <Label className="input-name-password-login">Password</Label>
                 <Input type="password" name="password"/>
               </FormGroup>
-              <Button className="submit" type="submit" name="submit"><a className="submit-login-register-anchor" href="/expenses-form">Submit</a></Button>
+              <Button className="submit-login" type="submit" name="submit"><a className="submit-login-register-anchor" href="/expenses-form">Submit</a></Button>
             </Form>
           </div>
         </div>
