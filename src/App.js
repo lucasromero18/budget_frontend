@@ -11,13 +11,15 @@ import Expenses from "./Components/Expenses.js"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import {Button} from 'reactstrap'
 
+
 //ONLY GOING TO RENDER NAVBAR WHEN USER IS LOGGED IN
 
 class App extends Component {
 
   state = {
     users: [],
-    credentials: []
+    credentials: [],
+    showNav: false
   }
 
   async componentDidMount(){
@@ -27,6 +29,18 @@ class App extends Component {
     const credentials = await credentialsResponse.json()
     this.setState({
       users, credentials
+    })
+  }
+
+  showSideNav = () => {
+    this.setState({
+      showNav: true
+    })
+  }
+
+  hideSideNav = () => {
+    this.setState({
+      showNav: false
     })
   }
 
@@ -40,7 +54,7 @@ class App extends Component {
                     <Route path="/login" render={(props) => <Login users={this.state.users}/>} />
                     <Route path="/register" render={(props) => <Register {...props} />} />
                     <Route path="/expenses-form/" render={(props) => <ExpensesForm {...props}/>} />
-                    <Route path="/dashboard" render={(props) => <Dashboard users={this.state.users} credentials={this.state.credentials} {...props}/>} />
+                    <Route path="/dashboard" render={(props) => <Dashboard sideNavState={this.state.showNav} sideNavShow={this.showSideNav} sideNavHide={this.hideSideNav} users={this.state.users} credentials={this.state.credentials} {...props}/>} />
                     <Route path="/expenses" render={(props) => <Expenses users={this.state.users} credentials={this.state.credentials} {...props}/>} />
                 </Switch>
           </div>

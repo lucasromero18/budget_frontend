@@ -24,9 +24,6 @@ class Header extends Component {
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className="navLink" href="/login">Your Expenses</NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink className="navLink" href="/register">Logout</NavLink>
               </NavItem>
             </Nav>

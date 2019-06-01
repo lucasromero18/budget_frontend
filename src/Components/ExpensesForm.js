@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import "../App.css"
-import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class ExpensesForm extends Component {
 

@@ -339,6 +339,64 @@
     width: 60%;
 }
 
+/* DASHBOARD */
+
+#dashboard{
+    height: 100vw;
+}
+
+.dashboard-header-container{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.dashboard-header{
+    font-family: 'Varela Round', sans-serif;
+    color: deepSkyBlue;
+    font-size: 3rem;
+}
+
+.sideNav-button{
+    background-color: deepSkyBlue !important;
+    box-shadow: 2px 2px #888888;
+    margin-top: 3%;
+    margin-left: 3%;
+    font-family: 'Varela Round', sans-serif;
+    color: black !important;
+}
+
+.sideNav-button-hide{
+    background-color: deepSkyBlue !important;
+    box-shadow: 2px 2px #888888;
+    margin-top: 1%;
+    margin-left: 5.5rem;
+    font-family: 'Varela Round', sans-serif;
+    color: black !important;
+    width: 8rem;
+}
+
+/* SIDE NAV */
+
+.sideNav-container{
+    margin-left: 3%;
+    margin-top: 2%;
+    border: 2px solid #888888;
+    width: 15rem;
+    box-shadow: 1px 2px #888888;
+}
+
+.sideNav-link{
+    padding-top: 1rem !important;
+    text-align: center;
+    height: 5rem;
+    text-decoration: none !important;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.8rem;
+    border: 1px solid #888888;
+    background-color: deepSkyBlue !important;
+}
+
 
 
 
