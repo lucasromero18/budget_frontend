@@ -21,7 +21,8 @@ class App extends Component {
     credentials: [],
     showNav: false,
     showPieChartWeekly: false,
-    showPieChartDaily: false
+    showPieChartDaily: false,
+    showBarGraph: false
   }
 
   async componentDidMount(){
@@ -43,6 +44,12 @@ class App extends Component {
   hideSideNav = () => {
     this.setState({
       showNav: false
+    })
+  }
+
+  showBarGraph = () => {
+    this.setState({
+      showBarGraph: true
     })
   }
 
@@ -68,7 +75,7 @@ showDailyPieChartClick = () => {
                     <Route path="/login" render={(props) => <Login users={this.state.users}/>} />
                     <Route path="/register" render={(props) => <Register {...props} />} />
                     <Route path="/expenses-form/" render={(props) => <ExpensesForm {...props}/>} />
-                    <Route path="/dashboard" render={(props) => <Dashboard pieChartWeeklyClick={this.showWeeklyPieChartClick} pieChartWeekly={this.state.showPieChartWeekly} pieChartDaily={this.state.showPieChartDaily} pieChartDailyClick={this.showDailyPieChartClick} sideNavState={this.state.showNav} sideNavShow={this.showSideNav} sideNavHide={this.hideSideNav} users={this.state.users} credentials={this.state.credentials} {...props}/>} />
+                    <Route path="/dashboard" render={(props) => <Dashboard barGraphState={this.state.showBarGraph} barGraphClickEvent={this.showBarGraph} pieChartWeeklyClick={this.showWeeklyPieChartClick} pieChartWeekly={this.state.showPieChartWeekly} pieChartDaily={this.state.showPieChartDaily} pieChartDailyClick={this.showDailyPieChartClick} sideNavState={this.state.showNav} sideNavShow={this.showSideNav} sideNavHide={this.hideSideNav} users={this.state.users} credentials={this.state.credentials} {...props}/>} />
                     <Route path="/expenses" render={(props) => <Expenses users={this.state.users} credentials={this.state.credentials} {...props}/>} />
                 </Switch>
           </div>

@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import "../App.css"
 import Header from "./Header.js"
 import SideNav from './SideNav.js'
+import BarGraph from './BarGraph.js'
 import PieChartMonthly from './PieChartMonthly.js'
 import PieChartWeekly from './PieChartWeekly.js'
 import PieChartDaily from './PieChartDaily.js'
@@ -27,8 +28,9 @@ class Dashboard extends Component {
               <div className="button-sideNav-container">
                 <Button onClick={this.props.sideNavShow} className="sideNav-button" size="lg">More Options</Button>
               </div> 
-                {this.props.sideNavState && <SideNav pieChartDailyClickEvent={this.props.pieChartDailyClick} pieChartWeeklyClickEvent={this.props.pieChartWeeklyClick} sideNavHide={this.props.sideNavHide}/>}
+                {this.props.sideNavState && <SideNav barGraphClickEvent={this.props.barGraphClickEvent} pieChartDailyClickEvent={this.props.pieChartDailyClick} pieChartWeeklyClickEvent={this.props.pieChartWeeklyClick} sideNavHide={this.props.sideNavHide}/>}
                 <PieChartMonthly />
+                {this.props.barGraphState && <BarGraph />}
                 {this.props.pieChartWeekly && <PieChartWeekly />}
                 {this.props.pieChartDaily && <PieChartDaily />}
           </div>

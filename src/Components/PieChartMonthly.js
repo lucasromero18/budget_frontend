@@ -15,6 +15,7 @@ class PieChartMonthly extends Component {
           <div className="chart-container">
             <Chart
               chartType="PieChart"
+              loader={<div>Loading Your Expenses</div>}
               data={[
                 ['bill', 'cost'],
                 ['Car', 300],

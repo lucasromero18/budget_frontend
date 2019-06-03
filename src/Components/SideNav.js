@@ -14,7 +14,7 @@ class SideNav extends Component {
               <NavLink className="sideNav-link" href="/expenses">Your Expenses</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="sideNav-link" href="#">Bar Graph</NavLink>
+              <NavLink onClick={this.props.barGraphClickEvent} className="sideNav-link" href="#">Bar Graph</NavLink>
             </NavItem>
             <NavItem>
               <NavLink onClick={this.props.pieChartWeeklyClickEvent} className="sideNav-link" href="#">Weekly</NavLink>
