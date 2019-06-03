@@ -17,24 +17,25 @@ class PieChartWeekly extends Component {
               chartType="PieChart"
               data={[
                 ['bill', 'cost'],
-                ['Car', 300],
-                ['Food', 400],
-                ['Rent', 1000],
-                ['Gym', 35],
+                ['Car', 75],
+                ['Food', 100],
+                ['Rent', 250],
+                ['Gym', 8.75],
+                ['Spending', 125]
               ]}
               options={{
-                title: "You are now viewing: This weeks budget",
+                title: "You are now viewing: This weeks budget.",
                 titleTextStyle: {
-                  color: "deepSkyBlue",
-                  fontSize: 23,
+                  color: "#888888",
+                  fontSize: 30,
                   bold: false
                 },
                 is3D: true,
                 fontName: "'Varela Round', sans-serif",
-                fontSize: 25,
+                fontSize: 20,
                 width:'50rem',
                 height:'40rem',
-                slices: [{color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}]
+                slices: [{color: "#800080"}, {color: "#F5DEB3"}, {color: "#800080"}, {color: "#F5DEB3"}, {color: "#90EE90"}, {color: "#F5DEB3"}, {color: "#800080"}, {color: "#F5DEB3"}, {color: "#800080"}, {color: "#888888"}]
               }}
               rootProps={{ 'data-testid': '2' }}
             />  

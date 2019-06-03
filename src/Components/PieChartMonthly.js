@@ -21,20 +21,21 @@ class PieChartMonthly extends Component {
                 ['Food', 400],
                 ['Rent', 1000],
                 ['Gym', 35],
+                ['Spending', 500]
               ]}
               options={{
-                title: "You are now viewing: This month's budget",
+                title: "You are now viewing: This month's budget.",
                 titleTextStyle: {
-                  color: "deepSkyBlue",
-                  fontSize: 23,
+                  color: "#888888",
+                  fontSize: 30,
                   bold: false
                 },
                 is3D: true,
                 fontName: "'Varela Round', sans-serif",
-                fontSize: 25,
-                width:'50rem',
+                fontSize: 20,
+                width:'51rem',
                 height:'40rem',
-                slices: [{color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}]
+                slices: [{color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}, {color: "#90EE90"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}]
               }}
               rootProps={{ 'data-testid': '2' }}
             />  

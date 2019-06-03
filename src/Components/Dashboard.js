@@ -3,8 +3,8 @@ import "../App.css"
 import Header from "./Header.js"
 import SideNav from './SideNav.js'
 import PieChartMonthly from './PieChartMonthly.js'
-import PieChartWeekly from './PieChartMonthly.js'
-import PieChartDaily from './PieChartMonthly.js'
+import PieChartWeekly from './PieChartWeekly.js'
+import PieChartDaily from './PieChartDaily.js'
 import {Button, Container, Row, Col} from 'reactstrap'
 
 
@@ -27,10 +27,10 @@ class Dashboard extends Component {
               <div className="button-sideNav-container">
                 <Button onClick={this.props.sideNavShow} className="sideNav-button" size="lg">More Options</Button>
               </div> 
-                {this.props.sideNavState && <SideNav pieChartWeeklyClickEvent={this.props.showWeeklyPieChartOnClick} sideNavHide={this.props.sideNavHide}/>}
+                {this.props.sideNavState && <SideNav pieChartDailyClickEvent={this.props.pieChartDailyClick} pieChartWeeklyClickEvent={this.props.pieChartWeeklyClick} sideNavHide={this.props.sideNavHide}/>}
                 <PieChartMonthly />
-                {this.props.showPieChartWeekly && <PieChartWeekly />}
-                <PieChartDaily />
+                {this.props.pieChartWeekly && <PieChartWeekly />}
+                {this.props.pieChartDaily && <PieChartDaily />}
           </div>
         </>
       );

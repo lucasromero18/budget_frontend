@@ -347,7 +347,8 @@
 
 .dashboard-header-container{
     text-align: center;
-    margin-top: 3%;
+    margin-top: 1.5%;
+    margin-bottom: 4%;
 }
 
 .side-nav-pie-chart-container{
@@ -375,18 +376,18 @@
     margin-left: 3%;
     margin-top: 2%;
     border: 2px solid #888888;
-    width: 15rem;
+    width: 12rem;
     box-shadow: 1px 2px #888888;
 }
 
 .sideNav-link{
-    padding-top: 0.7rem !important;
+    padding-top: 0.9rem !important;
     text-align: center;
     height: 4rem;
     text-decoration: none !important;
     color: black;
     font-family: 'Varela Round', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.3em;
     border: 1px solid #888888;
     background-color: deepSkyBlue !important;
 }
@@ -395,18 +396,18 @@
     background-color: deepSkyBlue !important;
     box-shadow: 2px 2px #888888;
     margin-top: 1%;
-    margin-left: 5.5rem;
+    margin-left: 4.3rem;
     font-family: 'Varela Round', sans-serif;
     color: black !important;
     width: 8rem;
 }
 
-/* PIE CHART MONTHLY */
+/* PIE CHART */
 
 .chart-container{
     position: absolute;
-    top: 88%;
-    left: 54%;
+    top: 85%;
+    left: 52%;
     transform: translate(-50%, -50%);
 }
 

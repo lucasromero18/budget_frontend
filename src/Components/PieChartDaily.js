@@ -17,24 +17,25 @@ class PieChartDaily extends Component {
               chartType="PieChart"
               data={[
                 ['bill', 'cost'],
-                ['Car', 300],
-                ['Food', 400],
-                ['Rent', 1000],
-                ['Gym', 35],
+                ['Car', 10],
+                ['Food', 13.30],
+                ['Rent', 33.33],
+                ['Gym', 1.16],
+                ['Spending', 16.6]
               ]}
               options={{
-                title: "You are now viewing: Todays budget",
+                title: "You are now viewing: Todays budget.",
                 titleTextStyle: {
-                  color: "deepSkyBlue",
-                  fontSize: 23,
+                  color: "#888888",
+                  fontSize: 30,
                   bold: false
                 },
                 is3D: true,
                 fontName: "'Varela Round', sans-serif",
-                fontSize: 25,
+                fontSize: 20,
                 width:'50rem',
                 height:'40rem',
-                slices: [{color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}, {color: "deepSkyBlue"}, {color: "#888888"}]
+                slices: [{color: "#990014"}, {color: "#FF4500"}, {color: "#990014"}, {color: "#FF4500"}, {color: "#90EE90"}, {color: "#FF4500"}, {color: "#990014"}, {color: "#FF4500"}, {color: "#990014"}, {color: "#888888"}]
               }}
               rootProps={{ 'data-testid': '2' }}
             />  

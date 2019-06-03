@@ -20,7 +20,7 @@ class SideNav extends Component {
               <NavLink onClick={this.props.pieChartWeeklyClickEvent} className="sideNav-link" href="#">Weekly</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="sideNav-link" href="#">Daily</NavLink>
+              <NavLink onClick={this.props.pieChartDailyClickEvent} className="sideNav-link" href="#">Daily</NavLink>
             </NavItem>
           </Nav>
           <Button onClick={this.props.sideNavHide} className="sideNav-button-hide" size="lg">Hide</Button>
