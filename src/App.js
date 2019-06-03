@@ -47,9 +47,11 @@ class App extends Component {
     })
   }
 
-  showBarGraph = () => {
+
+
+  showDailyPieChartClick = () => {
     this.setState({
-      showBarGraph: true
+      showPieChartDaily: true
     })
   }
 
@@ -59,11 +61,12 @@ showWeeklyPieChartClick = () => {
   })
 }
 
-showDailyPieChartClick = () => {
+showBarGraph = () => {
   this.setState({
-    showPieChartDaily: true
+    showBarGraph: true
   })
 }
+
 
 
   render(){

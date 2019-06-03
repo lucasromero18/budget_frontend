@@ -30,9 +30,9 @@ class Dashboard extends Component {
               </div> 
                 {this.props.sideNavState && <SideNav barGraphClickEvent={this.props.barGraphClickEvent} pieChartDailyClickEvent={this.props.pieChartDailyClick} pieChartWeeklyClickEvent={this.props.pieChartWeeklyClick} sideNavHide={this.props.sideNavHide}/>}
                 <PieChartMonthly />
-                {this.props.barGraphState && <BarGraph />}
-                {this.props.pieChartWeekly && <PieChartWeekly />}
                 {this.props.pieChartDaily && <PieChartDaily />}
+                {this.props.pieChartWeekly && <PieChartWeekly />}
+                {this.props.barGraphState && <BarGraph />}
           </div>
         </>
       );

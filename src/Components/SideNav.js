@@ -11,16 +11,16 @@ class SideNav extends Component {
         <div className="side-nav">
           <Nav vertical className="sideNav-container">
             <NavItem>
-              <NavLink className="sideNav-link" href="/expenses">Your Expenses</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink onClick={this.props.barGraphClickEvent} className="sideNav-link" href="#">Bar Graph</NavLink>
+              <NavLink onClick={this.props.pieChartDailyClickEvent} className="sideNav-link"  href="#">Daily</NavLink>
             </NavItem>
             <NavItem>
               <NavLink onClick={this.props.pieChartWeeklyClickEvent} className="sideNav-link" href="#">Weekly</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={this.props.pieChartDailyClickEvent} className="sideNav-link" href="#">Daily</NavLink>
+              <NavLink onClick={this.props.barGraphClickEvent} className="sideNav-link" href="#">Bar Graph</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/expenses" className="sideNav-link">Your Expenses</NavLink>
             </NavItem>
           </Nav>
           <Button onClick={this.props.sideNavHide} className="sideNav-button-hide" size="lg">Hide</Button>

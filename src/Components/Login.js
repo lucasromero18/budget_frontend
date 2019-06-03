@@ -51,7 +51,7 @@ class Login extends Component {
                 <Label className="input-name-password-login">Password</Label>
                 <Input onChange={this.loginInputChange} type="password" name="password"/>
               </FormGroup>
-              <Button className="submit-login" type="submit" name="submit"><a className="submit-login-register-anchor" href="/expenses-form">Submit</a></Button>
+              <Button className="submit-login" type="submit" name="submit"><a className="submit-login-register-anchor" href="/dashboard">Submit</a></Button>
             </Form>
           </div>
         </div>
