@@ -350,10 +350,14 @@
     margin-top: 3%;
 }
 
+.side-nav-pie-chart-container{
+    display: inline;
+}
+
 .dashboard-header{
     font-family: 'Varela Round', sans-serif;
     color: deepSkyBlue;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .sideNav-button{
@@ -363,16 +367,6 @@
     margin-left: 3%;
     font-family: 'Varela Round', sans-serif;
     color: black !important;
-}
-
-.sideNav-button-hide{
-    background-color: deepSkyBlue !important;
-    box-shadow: 2px 2px #888888;
-    margin-top: 1%;
-    margin-left: 5.5rem;
-    font-family: 'Varela Round', sans-serif;
-    color: black !important;
-    width: 8rem;
 }
 
 /* SIDE NAV */
@@ -386,15 +380,34 @@
 }
 
 .sideNav-link{
-    padding-top: 1rem !important;
+    padding-top: 0.7rem !important;
     text-align: center;
-    height: 5rem;
+    height: 4rem;
     text-decoration: none !important;
     color: black;
     font-family: 'Varela Round', sans-serif;
     font-size: 1.8rem;
     border: 1px solid #888888;
     background-color: deepSkyBlue !important;
+}
+
+.sideNav-button-hide{
+    background-color: deepSkyBlue !important;
+    box-shadow: 2px 2px #888888;
+    margin-top: 1%;
+    margin-left: 5.5rem;
+    font-family: 'Varela Round', sans-serif;
+    color: black !important;
+    width: 8rem;
+}
+
+/* PIE CHART MONTHLY */
+
+.chart-container{
+    position: absolute;
+    top: 88%;
+    left: 54%;
+    transform: translate(-50%, -50%);
 }
 
 

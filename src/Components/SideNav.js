@@ -17,7 +17,7 @@ class SideNav extends Component {
               <NavLink className="sideNav-link" href="#">Bar Graph</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="sideNav-link" href="#">Weekly</NavLink>
+              <NavLink onClick={this.props.pieChartWeeklyClickEvent} className="sideNav-link" href="#">Weekly</NavLink>
             </NavItem>
             <NavItem>
               <NavLink className="sideNav-link" href="#">Daily</NavLink>

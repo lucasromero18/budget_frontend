@@ -19,7 +19,9 @@ class App extends Component {
   state = {
     users: [],
     credentials: [],
-    showNav: false
+    showNav: false,
+    showPieChartWeekly: false,
+    showPieChartDaily: false
   }
 
   async componentDidMount(){
@@ -44,6 +46,10 @@ class App extends Component {
     })
   }
 
+showWeeklyPieChartClick = () => {
+  console.log("herro")
+}
+
 
   render(){
     return (
@@ -54,7 +60,7 @@ class App extends Component {
                     <Route path="/login" render={(props) => <Login users={this.state.users}/>} />
                     <Route path="/register" render={(props) => <Register {...props} />} />
                     <Route path="/expenses-form/" render={(props) => <ExpensesForm {...props}/>} />
-                    <Route path="/dashboard" render={(props) => <Dashboard sideNavState={this.state.showNav} sideNavShow={this.showSideNav} sideNavHide={this.hideSideNav} users={this.state.users} credentials={this.state.credentials} {...props}/>} />
+                    <Route path="/dashboard" render={(props) => <Dashboard pieChartWeeklyOnClick={this.showWeeklyPieChartClick} pieChartWeekly={this.state.showPieChartWeekly} pieChartDaily={this.state.showPieChartDaily} sideNavState={this.state.showNav} sideNavShow={this.showSideNav} sideNavHide={this.hideSideNav} users={this.state.users} credentials={this.state.credentials} {...props}/>} />
                     <Route path="/expenses" render={(props) => <Expenses users={this.state.users} credentials={this.state.credentials} {...props}/>} />
                 </Switch>
           </div>
