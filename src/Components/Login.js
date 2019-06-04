@@ -13,7 +13,16 @@ class Login extends Component {
 
   loginFormSubmission = (e) => {
     e.preventDefault()
-    console.log(this.state.email, this.state.password)
+    axios.post("http://localhost:8000/users", {
+        email: this.state.email,
+        password: this.state.password
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }
 
   loginInputChange = () => {
@@ -24,17 +33,6 @@ class Login extends Component {
   }
 
     render(){
-
-      axios.post("http://localhost:8000/users", {
-        email: this.state.email,
-        password: this.state.password
-      })
-      .then(function(response) {
-        console.log(response);
-      })
-      .catch(function(error) {
-        console.log(error);
-      })
 
       return (
         <div id="login-page">
