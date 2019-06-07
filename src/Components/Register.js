@@ -16,16 +16,14 @@ class Register extends Component {
 
   formOnChange = (e) => {
     this.setState({
-      name: e.target.name,
-      email: e.target.email,
-      password: e.target.password,
-      monthly_inc: e.target.monthly_inc
+      ...this.state,
+      [e.target.name]: e.target.value,
     })
   }
 
   registerFormSubmission = (e) => {
     e.preventDefault()
-    axios.post("http://localhost8000/users", {
+    axios.post("http://localhost:8000/register", {
       name: this.state.name,
       email: this.state.email,
       password: this.state.password,
@@ -45,24 +43,24 @@ class Register extends Component {
         </div>
           <h1 className="register-header">Register</h1>  
           <div className="form-container-register">
-            <Form onChange={this.formOnChange}>
+            <Form onSubmit={this.registerFormSubmission}>
             <FormGroup className="label-input-container">
                 <Label className="input-name-register">Name</Label>
-                <Input type="name" name="name"/>
+                <Input onChange={this.formOnChange} type="name" name="name"/>
               </FormGroup>
               <FormGroup className="label-input-container">
                 <Label className="input-name-register">Email</Label>
-                <Input type="email" name="email"/>
+                <Input onChange={this.formOnChange} type="email" name="email"/>
               </FormGroup>
               <FormGroup className="label-input-container">
                 <Label className="input-name-register">Password</Label>
-                <Input type="password" name="password"/>
+                <Input onChange={this.formOnChange} type="password" name="password"/>
               </FormGroup>
               <FormGroup className="label-input-container">
                 <Label className="input-name-register">Monthly Income</Label>
-                <Input type="text" name="income"/>
+                <Input onChange={this.formOnChange} type="number" name="monthly_inc"/>
               </FormGroup>
-                  <Button onSubmit={this.registerFormSubmission} className="submit-register" type="submit" name="submit"><a className="submit-login-register-anchor" href="/expenses-form">Submit</a></Button>
+                  <Button className="submit-register" type="submit" name="submit">Submit</Button>
             </Form>
           </div>
         </>

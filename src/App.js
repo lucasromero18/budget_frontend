@@ -26,9 +26,9 @@ class App extends Component {
   }
 
   async componentDidMount(){
-    const usersResponse = await fetch("http://localhost8000/users")
+    const usersResponse = await fetch("http://localhost:8000/users")
     const users = await usersResponse.json()
-    const credentialsResponse = await fetch("http://localhost8000/credentials")
+    const credentialsResponse = await fetch("http://localhost:8000/credentials")
     const credentials = await credentialsResponse.json()
     this.setState({
       users, credentials
