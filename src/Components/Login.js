@@ -13,7 +13,7 @@ class Login extends Component {
 
   loginFormSubmission = (e) => {
     e.preventDefault()
-    axios.post("http://localhost:8000/users", {
+    axios.post("http://localhost:8000/login", {
         email: this.state.email,
         password: this.state.password
       })
@@ -25,10 +25,10 @@ class Login extends Component {
       })
   }
 
-  loginInputChange = () => {
+  loginInputChange = (e) => {
     this.setState({
-      email: this.state.email,
-      password: this.state.password
+      ...this.state,
+      [e.target.name]: e.target.value
     })
   }
 
@@ -49,7 +49,7 @@ class Login extends Component {
                 <Label className="input-name-password-login">Password</Label>
                 <Input onChange={this.loginInputChange} type="password" name="password"/>
               </FormGroup>
-              <Button className="submit-login" type="submit" name="submit"><a className="submit-login-register-anchor" href="/dashboard">Submit</a></Button>
+              <Button href="/dashboard" className="submit-login" type="submit" name="submit">Submit</Button>
             </Form>
           </div>
         </div>

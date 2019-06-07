@@ -60,7 +60,7 @@ class Register extends Component {
                 <Label className="input-name-register">Monthly Income</Label>
                 <Input onChange={this.formOnChange} type="number" name="monthly_inc"/>
               </FormGroup>
-                  <Button className="submit-register" type="submit" name="submit">Submit</Button>
+                  <Button href="/expenses-form" className="submit-register" type="submit" name="submit">Submit</Button>
             </Form>
           </div>
         </>
